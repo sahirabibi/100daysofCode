@@ -1,32 +1,23 @@
 // Using frequency counter approach to reduce a O(N2) solution to an O(N) solution
-
-
-function validAnagram(str1, str2) { //rat tar
-    if (str1.length !== str2.length) {
-        return false;
-    }
-    // create an two obj to store freq of each letter in each string
+// create an two obj to store freq of each letter in each string
     // compare both objects, and make sure that the letters and their frequency matches up
     // check if char in obj1 in obj2
         // return false 
     // check value is the same in both objs
         // if not, return false
     // return true
+
+function validAnagram(str1, str2) { //rat tar
+    if (str1.length !== str2.length) {
+        return false;
+    }
     let obj1 = {}
     let obj2 = {}
     for (var i of str1) {
-        if (obj1[i]) {
-            obj1[i]++;
-        } else {
-            obj1[i] = 1;
-        }
+        obj1[i] ? obj1[i]++ : obj1[i] = 1;
     }
     for (var i of str2) {
-        if (obj2[i]) {
-            obj2[i]++;
-        } else {
-            obj2[i] = 1;
-        }
+        obj2[i] ? obj2[i]++ : obj2[i] = 1;
     }
 
     for (prop in obj1) {
