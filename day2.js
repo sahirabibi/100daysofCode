@@ -31,3 +31,26 @@ function validAnagram(str1, str2) { //rat tar
     }
     return true;
 }
+
+// better solution 
+function anagram(str1, str2) {
+    if (str1.length !== str2.length) {
+        return false;
+    }
+    let obj1 = {}
+    for (var i of str1) {
+        obj1[i] ? obj1[i]++ : obj1[i] = 1;
+    }
+    
+    for (let i = 0; i < second.length; i++) {
+        if (!lookup[letter]) {
+            return false // if letter not in obj OR is value is 0 (falsey) return false
+       
+        } else {
+            lookup[letter] -= 1;
+        }
+            
+}
+
+
+
