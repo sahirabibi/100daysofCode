@@ -43,3 +43,7 @@ function recursiveFactorial(num) { // 4
 }
 
 console.log(recursiveFactorial(4));
+
+
+// PIT FALLS of recursion
+// Wrong base case
