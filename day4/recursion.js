@@ -25,3 +25,21 @@ function sumRange(num) { // 5
     if (num === 1) return 1;
     return num + sumRange(num-1)
 }
+
+// recursion compared with for loops
+function factorial(num) { // 4
+    let total = 1;
+    for (let i = num; i > 0; i--) {
+        total *= i;
+    }
+    return total;
+}
+
+// recursive factorial 
+
+function recursiveFactorial(num) { // 4
+    if (num === 1) return num;
+    return num * recursiveFactorial(num - 1) // 4 * rF(3) ==> 4 * 3 * rF(2) ==> 4 * 3 * 2 * 1 ===> 24
+}
+
+console.log(recursiveFactorial(4));
