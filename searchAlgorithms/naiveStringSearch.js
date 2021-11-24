@@ -24,4 +24,8 @@ function naiveSearch(str, elem) { // lorielol / lol
     return count;
 }
 
+let obj = {
+    'I': 1, 'J':2
+}
+console.log(obj['I'])
 console.log(naiveSearch('lorie loled', 'lo'))

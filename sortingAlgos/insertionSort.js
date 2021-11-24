@@ -25,3 +25,6 @@ function insertionSort(arr) {
     return arr;
 
 }
+
+// O(N2)
+// Elementry O(N2) for all 
