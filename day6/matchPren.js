@@ -7,7 +7,7 @@ var isValid = function (s) {
 	if (s.length % 2 !== 0) {
 		return false;
 	}
-	let stack = []; // [[(
+	let stack = []; 
 	for (let i = 0; i < s.length; i++) {
 		if (obj.hasOwnProperty(s[i])) {
 			stack.push(s[i]);
